@@ -182,18 +182,44 @@ export default function ProductsPage() {
             </p>
           </div>
         ) : (
-          <div className={`grid gap-6 ${
-            viewMode === 'grid' 
-              ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4' 
-              : 'grid-cols-1'
-          }`}>
-            {filteredProducts.map((product) => (
-              <ProductCard
-                key={product.id}
-                {...product}
-              />
-            ))}
-          </div>
+          viewMode === 'grid' ? (
+            <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {filteredProducts.map((product) => (
+                <ProductCard key={product.id} {...product} />
+              ))}
+            </div>
+          ) : (
+            <div className="space-y-4">
+              {filteredProducts.map((p) => (
+                <div key={p.id} className="bg-white rounded-xl border p-5 flex flex-col gap-2">
+                  <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                    <span className="px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">{p.category}</span>
+                    {p.isAuction ? <span className="px-2 py-0.5 rounded-full bg-orange-100 text-orange-700">경매</span> : null}
+                  </div>
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="min-w-0">
+                      <h3 className="text-lg font-semibold truncate">{p.name}</h3>
+                      <p className="text-slate-600 line-clamp-2">{p.description}</p>
+                      <div className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
+                        <img src={p.sellerAvatar} alt={p.sellerName} className="w-6 h-6 rounded-full object-cover" />
+                        <span>{p.sellerName}</span>
+                      </div>
+                    </div>
+                    <div className="text-right whitespace-nowrap">
+                      {p.isAuction ? (
+                        <>
+                          <div className="text-blue-600 font-bold">현재 입찰가 {new Intl.NumberFormat('ko-KR').format(p.currentBid ?? 0)}원</div>
+                          <div className="text-sm text-muted-foreground">입찰 {p.bidCount ?? 0}건</div>
+                        </>
+                      ) : (
+                        <div className="text-slate-900 font-bold">{new Intl.NumberFormat('ko-KR').format(p.price)}원</div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )
         )}
 
         {/* Load More Button */}

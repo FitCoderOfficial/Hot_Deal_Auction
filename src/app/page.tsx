@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Navigation } from "@/components/Navigation"
+import Image from "next/image"
 import { ArrowRight, Star, Users, Zap, Shield } from "lucide-react"
 
 export default function Home() {
@@ -10,23 +11,191 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6">
-            24시간 경매
-            <span className="text-blue-600"> 마켓플레이스</span>
+        <div className="max-w-4xl mx-auto relative z-10">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-50 to-purple-50 rounded-full px-4 py-2 mb-6">
+            <span className="text-sm font-medium text-blue-700">1000+ 크리에이터의 작품</span>
+          </div>
+          <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-4">
+            You can discover
           </h1>
-          <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
-            크리에이터들의 특별한 상품을 24시간 경매로 만나보세요. 
-            자동 수상 시스템으로 공정하고 투명한 거래를 경험하세요.
+          <h2 className="text-6xl md:text-8xl font-bold italic text-slate-900 mb-6">
+            Mega Auction
+          </h2>
+          <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
+            독창적인 작품과 한정판 아이템을 만나보세요. 
+            경험 많은 아티스트와 크리에이터의 프리미엄 작품들을 경매로 만나보세요.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button size="lg" className="text-lg px-8 py-6">
-              경매 참여하기
-              <ArrowRight className="ml-2 h-5 w-5" />
+              경매 시작하기
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8 py-6">
               상품 둘러보기
             </Button>
+          </div>
+          <p className="text-sm text-slate-500">무료로 시작하세요 ••</p>
+        </div>
+        
+        {/* Scrolling Product Cards (below text) */}
+        <div className="mt-10 overflow-hidden w-screen relative left-1/2 right-1/2 -mx-[50vw] py-4 px-6">
+          <div className="flex w-max animate-scroll gap-6">
+            {/* First set of cards */}
+            <div className="flex gap-6">
+              <div className="w-72 h-96 bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0">
+                <div className="relative h-full">
+                  <Image src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=800" alt="디지털 아트" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <div className="text-sm font-medium text-left">디지털 아트</div>
+                    <div className="mt-2 flex items-center gap-2 text-sm opacity-95">
+                      <Image src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&crop=faces&w=64&h=64" alt="seller" width={28} height={28} className="rounded-full object-cover" />
+                      <span className="font-medium">디지털아티스트</span>
+                    </div>
+                    <div className="mt-2 text-xl font-bold text-left">₩320,000</div>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold text-sm mb-2">NFT 아트워크</h3>
+                  <p className="text-xs text-slate-600">독창적인 디지털 아트</p>
+                </div>
+              </div>
+              
+              <div className="w-72 h-96 bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0">
+                <div className="relative h-full">
+                  <Image src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&h=800" alt="수제 가죽" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <div className="text-sm font-medium text-left">수제 가죽</div>
+                    <div className="mt-2 flex items-center gap-2 text-sm opacity-95">
+                      <Image src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&crop=faces&w=64&h=64" alt="seller" width={28} height={28} className="rounded-full object-cover" />
+                      <span className="font-medium">가죽공방</span>
+                    </div>
+                    <div className="mt-2 text-xl font-bold text-left">₩89,000</div>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold text-sm mb-2">프리미엄 지갑</h3>
+                  <p className="text-xs text-slate-600">장인정신의 가죽 제품</p>
+                </div>
+              </div>
+              
+              <div className="w-72 h-96 bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0">
+                <div className="relative h-full">
+                  <Image src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&h=800" alt="한정판 굿즈" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <div className="text-sm font-medium text-left">한정판 굿즈</div>
+                    <div className="mt-2 flex items-center gap-2 text-sm opacity-95">
+                      <Image src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&crop=faces&w=64&h=64" alt="seller" width={28} height={28} className="rounded-full object-cover" />
+                      <span className="font-medium">아티스트스토어</span>
+                    </div>
+                    <div className="mt-2 text-xl font-bold text-left">₩180,000</div>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold text-sm mb-2">아티스트 굿즈</h3>
+                  <p className="text-xs text-slate-600">한정판 프리미엄 세트</p>
+                </div>
+              </div>
+              
+              <div className="w-72 h-96 bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0">
+                <div className="relative h-full">
+                  <Image src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&h=800" alt="스니커즈" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <div className="text-sm font-medium text-left">스니커즈</div>
+                    <div className="mt-2 flex items-center gap-2 text-sm opacity-95">
+                      <Image src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&crop=faces&w=64&h=64" alt="seller" width={28} height={28} className="rounded-full object-cover" />
+                      <span className="font-medium">스니커헤드</span>
+                    </div>
+                    <div className="mt-2 text-xl font-bold text-left">₩450,000</div>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold text-sm mb-2">한정판 스니커즈</h3>
+                  <p className="text-xs text-slate-600">콜라보레이션 한정판</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Duplicate set for seamless loop */}
+            <div className="flex gap-6">
+              <div className="w-72 h-96 bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0">
+                <div className="relative h-full">
+                  <Image src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1200&h=800" alt="디지털 아트" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <div className="text-sm font-medium text-left">디지털 아트</div>
+                    <div className="mt-2 flex items-center gap-2 text-sm opacity-95">
+                      <Image src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&crop=faces&w=64&h=64" alt="seller" width={28} height={28} className="rounded-full object-cover" />
+                      <span className="font-medium">디지털아티스트</span>
+                    </div>
+                    <div className="mt-2 text-xl font-bold text-left">₩320,000</div>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold text-sm mb-2">NFT 아트워크</h3>
+                  <p className="text-xs text-slate-600">독창적인 디지털 아트</p>
+                </div>
+              </div>
+              
+              <div className="w-72 h-96 bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0">
+                <div className="relative h-full">
+                  <Image src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1200&h=800" alt="수제 가죽" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <div className="text-sm font-medium text-left">수제 가죽</div>
+                    <div className="mt-2 flex items-center gap-2 text-sm opacity-95">
+                      <Image src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&crop=faces&w=64&h=64" alt="seller" width={28} height={28} className="rounded-full object-cover" />
+                      <span className="font-medium">가죽공방</span>
+                    </div>
+                    <div className="mt-2 text-xl font-bold text-left">₩89,000</div>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold text-sm mb-2">프리미엄 지갑</h3>
+                  <p className="text-xs text-slate-600">장인정신의 가죽 제품</p>
+                </div>
+              </div>
+              
+              <div className="w-72 h-96 bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0">
+                <div className="relative h-full">
+                  <Image src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&h=800" alt="한정판 굿즈" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <div className="text-sm font-medium text-left">한정판 굿즈</div>
+                    <div className="mt-2 flex items-center gap-2 text-sm opacity-95">
+                      <Image src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&crop=faces&w=64&h=64" alt="seller" width={28} height={28} className="rounded-full object-cover" />
+                      <span className="font-medium">아티스트스토어</span>
+                    </div>
+                    <div className="mt-2 text-xl font-bold text-left">₩180,000</div>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold text-sm mb-2">아티스트 굿즈</h3>
+                  <p className="text-xs text-slate-600">한정판 프리미엄 세트</p>
+                </div>
+              </div>
+              
+              <div className="w-72 h-96 bg-white rounded-2xl shadow-lg overflow-hidden flex-shrink-0">
+                <div className="relative h-full">
+                  <Image src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&h=800" alt="스니커즈" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <div className="text-sm font-medium text-left">스니커즈</div>
+                    <div className="mt-2 flex items-center gap-2 text-sm opacity-95">
+                      <Image src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&crop=faces&w=64&h=64" alt="seller" width={28} height={28} className="rounded-full object-cover" />
+                      <span className="font-medium">스니커헤드</span>
+                    </div>
+                    <div className="mt-2 text-xl font-bold text-left">₩450,000</div>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold text-sm mb-2">한정판 스니커즈</h3>
+                  <p className="text-xs text-slate-600">콜라보레이션 한정판</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

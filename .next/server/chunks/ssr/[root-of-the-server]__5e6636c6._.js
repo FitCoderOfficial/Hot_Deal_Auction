@@ -288,6 +288,7 @@ __turbopack_context__.s([
     ()=>ProductCard
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/MegaAuction/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/MegaAuction/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/MegaAuction/src/components/ui/card.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/MegaAuction/src/components/ui/badge.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/MegaAuction/src/components/ui/button.tsx [app-ssr] (ecmascript)");
@@ -296,6 +297,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$
 var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__ = __turbopack_context__.i("[project]/MegaAuction/node_modules/lucide-react/dist/esm/icons/heart.js [app-ssr] (ecmascript) <export default as Heart>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shopping$2d$cart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShoppingCart$3e$__ = __turbopack_context__.i("[project]/MegaAuction/node_modules/lucide-react/dist/esm/icons/shopping-cart.js [app-ssr] (ecmascript) <export default as ShoppingCart>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/MegaAuction/node_modules/next/image.js [app-ssr] (ecmascript)");
+"use client";
+;
 ;
 ;
 ;
@@ -304,11 +307,42 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$
 ;
 ;
 function ProductCard({ id, name, description, price, imageUrl, category, sellerName, isAuction = false, auctionEndsAt, currentBid, bidCount = 0, sellerAvatar }) {
+    const [liked, setLiked] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [burst, setBurst] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if ("TURBOPACK compile-time truthy", 1) return;
+        //TURBOPACK unreachable
+        ;
+        const key = undefined;
+    }, [
+        id
+    ]);
+    const toggleLike = ()=>{
+        if ("TURBOPACK compile-time truthy", 1) return;
+        //TURBOPACK unreachable
+        ;
+        const key = undefined;
+        const next = undefined;
+    };
     const formatPrice = (price)=>{
         return new Intl.NumberFormat('ko-KR', {
             style: 'currency',
             currency: 'KRW'
         }).format(price);
+    };
+    const showToast = (message)=>{
+        if ("TURBOPACK compile-time truthy", 1) return;
+        //TURBOPACK unreachable
+        ;
+        const toast = undefined;
+    };
+    const addToCart = ()=>{
+        if ("TURBOPACK compile-time truthy", 1) return;
+        //TURBOPACK unreachable
+        ;
+        const key = undefined;
+        const raw = undefined;
+        const items = undefined;
     };
     const formatTimeRemaining = (endDate)=>{
         const now = new Date();
@@ -323,7 +357,7 @@ function ProductCard({ id, name, description, price, imageUrl, category, sellerN
         return `${minutes}분`;
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-        className: "group overflow-hidden transition-all hover:shadow-lg hover:scale-105",
+        className: "group overflow-hidden transition-all hover:shadow-lg hover:scale-105 h-full flex flex-col",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "relative aspect-square overflow-hidden",
@@ -335,7 +369,7 @@ function ProductCard({ id, name, description, price, imageUrl, category, sellerN
                         className: "object-cover transition-transform group-hover:scale-105"
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                        lineNumber: 63,
+                        lineNumber: 118,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -346,60 +380,78 @@ function ProductCard({ id, name, description, price, imageUrl, category, sellerN
                             children: category
                         }, void 0, false, {
                             fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                            lineNumber: 70,
+                            lineNumber: 125,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                        lineNumber: 69,
+                        lineNumber: 124,
                         columnNumber: 9
                     }, this),
                     isAuction && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute top-3 right-3",
+                        className: "absolute top-3 right-3 z-10",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
                             className: "bg-orange-100 text-orange-800",
                             children: "경매"
                         }, void 0, false, {
                             fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                            lineNumber: 76,
+                            lineNumber: 131,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                        lineNumber: 75,
+                        lineNumber: 130,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                            size: "sm",
-                            variant: "secondary",
-                            className: "rounded-full",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-                                className: "w-4 h-4"
-                            }, void 0, false, {
-                                fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                lineNumber: 83,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
+                        className: "absolute bottom-3 right-3 z-10",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative",
+                            children: [
+                                burst && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "absolute -inset-2 rounded-full bg-red-400/40 animate-ping"
+                                }, void 0, false, {
+                                    fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
+                                    lineNumber: 138,
+                                    columnNumber: 23
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                    size: "sm",
+                                    variant: "secondary",
+                                    className: `rounded-full shadow-md transition-transform ${liked ? 'scale-110' : ''}`,
+                                    onClick: toggleLike,
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
+                                        className: `w-4 h-4 transition-colors ${liked ? 'text-red-500' : 'text-slate-600'}`,
+                                        fill: liked ? 'currentColor' : 'none'
+                                    }, void 0, false, {
+                                        fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
+                                        lineNumber: 145,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
+                                    lineNumber: 139,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                            lineNumber: 82,
+                            lineNumber: 137,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                        lineNumber: 81,
+                        lineNumber: 136,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                lineNumber: 62,
+                lineNumber: 117,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
-                className: "pb-3",
+                className: "pb-3 flex-shrink-0",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex items-center gap-2 mb-2",
@@ -411,20 +463,20 @@ function ProductCard({ id, name, description, price, imageUrl, category, sellerN
                                         src: sellerAvatar
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 157,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AvatarFallback"], {
                                         children: sellerName.charAt(0)
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                        lineNumber: 92,
+                                        lineNumber: 158,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                lineNumber: 90,
+                                lineNumber: 156,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -432,13 +484,13 @@ function ProductCard({ id, name, description, price, imageUrl, category, sellerN
                                 children: sellerName
                             }, void 0, false, {
                                 fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                lineNumber: 94,
+                                lineNumber: 160,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                        lineNumber: 89,
+                        lineNumber: 155,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -446,28 +498,28 @@ function ProductCard({ id, name, description, price, imageUrl, category, sellerN
                         children: name
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                        lineNumber: 96,
+                        lineNumber: 162,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                lineNumber: 88,
+                lineNumber: 154,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
-                className: "pb-3",
+                className: "pb-3 flex-grow",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-sm text-muted-foreground line-clamp-2 mb-4",
                         children: description
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                        lineNumber: 100,
+                        lineNumber: 166,
                         columnNumber: 9
                     }, this),
                     isAuction ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "space-y-3",
+                        className: "space-y-3 min-h-[80px]",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex justify-between items-center",
@@ -477,21 +529,21 @@ function ProductCard({ id, name, description, price, imageUrl, category, sellerN
                                         children: "현재 입찰가"
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                        lineNumber: 107,
+                                        lineNumber: 173,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "font-semibold text-lg text-blue-600",
-                                        children: formatPrice(currentBid || 0)
+                                        children: formatPrice(currentBid ?? 0)
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                        lineNumber: 108,
+                                        lineNumber: 174,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                lineNumber: 106,
+                                lineNumber: 172,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -502,24 +554,24 @@ function ProductCard({ id, name, description, price, imageUrl, category, sellerN
                                         children: "입찰 수"
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                        lineNumber: 113,
+                                        lineNumber: 179,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "text-sm font-medium",
                                         children: [
-                                            bidCount,
+                                            bidCount ?? 0,
                                             "건"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                        lineNumber: 114,
+                                        lineNumber: 180,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                lineNumber: 112,
+                                lineNumber: 178,
                                 columnNumber: 13
                             }, this),
                             auctionEndsAt && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -529,36 +581,36 @@ function ProductCard({ id, name, description, price, imageUrl, category, sellerN
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                        lineNumber: 118,
+                                        lineNumber: 184,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         children: formatTimeRemaining(auctionEndsAt)
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                        lineNumber: 119,
+                                        lineNumber: 185,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                lineNumber: 117,
+                                lineNumber: 183,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                        lineNumber: 105,
+                        lineNumber: 171,
                         columnNumber: 11
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex justify-between items-center",
+                        className: "flex justify-between items-center min-h-[40px]",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "text-sm text-muted-foreground",
                                 children: "가격"
                             }, void 0, false, {
                                 fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                lineNumber: 125,
+                                lineNumber: 191,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -566,50 +618,51 @@ function ProductCard({ id, name, description, price, imageUrl, category, sellerN
                                 children: formatPrice(price)
                             }, void 0, false, {
                                 fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                                lineNumber: 126,
+                                lineNumber: 192,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                        lineNumber: 124,
+                        lineNumber: 190,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                lineNumber: 99,
+                lineNumber: 165,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardFooter"], {
-                className: "pt-0",
+                className: "pt-0 flex-shrink-0",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                     className: "w-full",
                     size: "sm",
+                    onClick: addToCart,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shopping$2d$cart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShoppingCart$3e$__["ShoppingCart"], {
                             className: "w-4 h-4 mr-2"
                         }, void 0, false, {
                             fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                            lineNumber: 135,
+                            lineNumber: 201,
                             columnNumber: 11
                         }, this),
                         isAuction ? '입찰하기' : '장바구니에 추가'
                     ]
                 }, void 0, true, {
                     fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                    lineNumber: 134,
+                    lineNumber: 200,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                lineNumber: 133,
+                lineNumber: 199,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-        lineNumber: 61,
+        lineNumber: 116,
         columnNumber: 5
     }, this);
 }
@@ -1226,19 +1279,163 @@ function ProductsPage() {
                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
                         lineNumber: 176,
                         columnNumber: 11
-                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `grid gap-6 ${viewMode === 'grid' ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4' : 'grid-cols-1'}`,
+                    }, this) : viewMode === 'grid' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
                         children: filteredProducts.map((product)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ProductCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ProductCard"], {
                                 ...product
                             }, product.id, false, {
                                 fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                lineNumber: 191,
-                                columnNumber: 15
+                                lineNumber: 188,
+                                columnNumber: 17
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                        lineNumber: 185,
-                        columnNumber: 11
+                        lineNumber: 186,
+                        columnNumber: 13
+                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "space-y-4",
+                        children: filteredProducts.map((p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "bg-white rounded-xl border p-5 flex flex-col gap-2",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-3 text-sm text-muted-foreground",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "px-2 py-0.5 rounded-full bg-slate-100 text-slate-700",
+                                                children: p.category
+                                            }, void 0, false, {
+                                                fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                                lineNumber: 196,
+                                                columnNumber: 21
+                                            }, this),
+                                            p.isAuction ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "px-2 py-0.5 rounded-full bg-orange-100 text-orange-700",
+                                                children: "경매"
+                                            }, void 0, false, {
+                                                fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                                lineNumber: 197,
+                                                columnNumber: 36
+                                            }, this) : null
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                        lineNumber: 195,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-start justify-between gap-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "min-w-0",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                        className: "text-lg font-semibold truncate",
+                                                        children: p.name
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                                        lineNumber: 201,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-slate-600 line-clamp-2",
+                                                        children: p.description
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                                        lineNumber: 202,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "mt-2 flex items-center gap-2 text-sm text-muted-foreground",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                src: p.sellerAvatar,
+                                                                alt: p.sellerName,
+                                                                className: "w-6 h-6 rounded-full object-cover"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                                                lineNumber: 204,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                children: p.sellerName
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                                                lineNumber: 205,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                                        lineNumber: 203,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                                lineNumber: 200,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "text-right whitespace-nowrap",
+                                                children: p.isAuction ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "text-blue-600 font-bold",
+                                                            children: [
+                                                                "현재 입찰가 ",
+                                                                new Intl.NumberFormat('ko-KR').format(p.currentBid ?? 0),
+                                                                "원"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                                            lineNumber: 211,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "text-sm text-muted-foreground",
+                                                            children: [
+                                                                "입찰 ",
+                                                                p.bidCount ?? 0,
+                                                                "건"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                                            lineNumber: 212,
+                                                            columnNumber: 27
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-slate-900 font-bold",
+                                                    children: [
+                                                        new Intl.NumberFormat('ko-KR').format(p.price),
+                                                        "원"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                                    lineNumber: 215,
+                                                    columnNumber: 25
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                                lineNumber: 208,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                        lineNumber: 199,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, p.id, true, {
+                                fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                                lineNumber: 194,
+                                columnNumber: 17
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/MegaAuction/src/app/products/page.tsx",
+                        lineNumber: 192,
+                        columnNumber: 13
                     }, this),
                     filteredProducts.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "text-center mt-12",
@@ -1248,12 +1445,12 @@ function ProductsPage() {
                             children: "더 많은 상품 보기"
                         }, void 0, false, {
                             fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                            lineNumber: 202,
+                            lineNumber: 228,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                        lineNumber: 201,
+                        lineNumber: 227,
                         columnNumber: 11
                     }, this)
                 ]
