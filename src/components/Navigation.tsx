@@ -5,9 +5,11 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Menu, X, ShoppingCart, User, Bell } from 'lucide-react'
+import { LoginModal } from '@/components/LoginModal'
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
 
   return (
     <nav className="bg-white shadow-sm border-b">
@@ -45,11 +47,8 @@ export function Navigation() {
             <Button variant="ghost" size="sm">
               <User className="w-4 h-4" />
             </Button>
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" onClick={() => setIsLoginModalOpen(true)}>
               로그인
-            </Button>
-            <Button size="sm">
-              시작하기
             </Button>
           </div>
 
@@ -90,17 +89,17 @@ export function Navigation() {
                 리더보드
               </Link>
               <div className="pt-4 border-t space-y-2">
-                <Button variant="outline" className="w-full">
+                <Button variant="outline" className="w-full" onClick={() => setIsLoginModalOpen(true)}>
                   로그인
-                </Button>
-                <Button className="w-full">
-                  시작하기
                 </Button>
               </div>
             </div>
           </div>
         )}
       </div>
+      
+      {/* Login Modal */}
+      <LoginModal isOpen={isLoginModalOpen} onClose={() => setIsLoginModalOpen(false)} />
     </nav>
   )
 }
