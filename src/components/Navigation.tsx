@@ -5,11 +5,9 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Menu, X, ShoppingCart, User, Bell } from 'lucide-react'
-import { LoginModal } from '@/components/LoginModal'
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [userInfo, setUserInfo] = useState<{name: string, role: string} | null>(null)
 
@@ -72,9 +70,11 @@ export function Navigation() {
                 </div>
               </>
             ) : (
-              <Button variant="outline" size="sm" onClick={() => setIsLoginModalOpen(true)}>
-                로그인
-              </Button>
+              <Link href="/login">
+                <Button variant="ghost" size="lg" className="text-base font-semibold">
+                  로그인
+                </Button>
+              </Link>
             )}
           </div>
 
@@ -143,26 +143,17 @@ export function Navigation() {
                     </Button>
                   </div>
                 ) : (
-                  <Button variant="outline" className="w-full" onClick={() => setIsLoginModalOpen(true)}>
-                    로그인
-                  </Button>
+                  <Link href="/login">
+                    <Button variant="ghost" className="w-full text-base font-semibold">
+                      로그인
+                    </Button>
+                  </Link>
                 )}
               </div>
             </div>
           </div>
         )}
       </div>
-      
-      {/* Login Modal */}
-      <LoginModal 
-        isOpen={isLoginModalOpen} 
-        onClose={() => setIsLoginModalOpen(false)}
-        onLogin={(userData) => {
-          setIsLoggedIn(true)
-          setUserInfo(userData)
-          setIsLoginModalOpen(false)
-        }}
-      />
     </nav>
   )
 }

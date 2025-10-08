@@ -1,7 +1,9 @@
+import React from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Navigation } from "@/components/Navigation"
 import Image from "next/image"
+import Link from "next/link"
 import { ArrowRight, Star, Users, Zap, Shield } from "lucide-react"
 
 export default function Home() {
@@ -26,9 +28,11 @@ export default function Home() {
             경험 많은 아티스트와 크리에이터의 프리미엄 작품들을 경매로 만나보세요.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="text-lg px-8 py-6">
-              경매 시작하기
-            </Button>
+            <Link href="/login">
+              <Button size="lg" className="text-lg px-8 py-6">
+                경매 시작하기
+              </Button>
+            </Link>
             <Button size="lg" variant="outline" className="text-lg px-8 py-6">
               상품 둘러보기
             </Button>
@@ -200,6 +204,119 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Creators Section - Full Width */}
+      <section className="bg-slate-50 py-16">
+        <div className="w-full">
+          <div className="text-center mb-12 px-4">
+            <h3 className="text-sm font-medium text-slate-500 uppercase tracking-wider mb-8">
+              CREATORS HIRING WITH MEGAAUCTION
+            </h3>
+            
+            {/* Avatar Group - Real People Images */}
+            <div className="flex justify-center items-center mb-8">
+              <div className="flex -space-x-2">
+                <Image 
+                  src="https://i.pravatar.cc/64?img=1" 
+                  alt="Creator 1" 
+                  width={48} 
+                  height={48} 
+                  className="w-12 h-12 rounded-full border-2 border-white shadow-sm object-cover"
+                />
+                <Image 
+                  src="https://i.pravatar.cc/64?img=2" 
+                  alt="Creator 2" 
+                  width={48} 
+                  height={48} 
+                  className="w-12 h-12 rounded-full border-2 border-white shadow-sm object-cover"
+                />
+                <Image 
+                  src="https://i.pravatar.cc/64?img=3" 
+                  alt="Creator 3" 
+                  width={48} 
+                  height={48} 
+                  className="w-12 h-12 rounded-full border-2 border-white shadow-sm object-cover"
+                />
+                <Image 
+                  src="https://i.pravatar.cc/64?img=4" 
+                  alt="Creator 4" 
+                  width={48} 
+                  height={48} 
+                  className="w-12 h-12 rounded-full border-2 border-white shadow-sm object-cover"
+                />
+                <Image 
+                  src="https://i.pravatar.cc/64?img=5" 
+                  alt="Creator 5" 
+                  width={48} 
+                  height={48} 
+                  className="w-12 h-12 rounded-full border-2 border-white shadow-sm object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Role Cards - Responsive Layout */}
+          <div className="w-full py-4">
+            <div className="flex items-center justify-center gap-4 flex-wrap px-4">
+              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-18 h-18 mx-auto mb-5 bg-purple-100 rounded-lg flex items-center justify-center">
+                  <span className="text-purple-600 text-3xl">🎨</span>
+                </div>
+                <h4 className="text-lg font-medium text-slate-900">디지털 아트</h4>
+              </Card>
+              
+              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-18 h-18 mx-auto mb-5 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <span className="text-blue-600 text-3xl">👟</span>
+                </div>
+                <h4 className="text-lg font-medium text-slate-900">스니커즈</h4>
+              </Card>
+              
+              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-18 h-18 mx-auto mb-5 bg-orange-100 rounded-lg flex items-center justify-center">
+                  <span className="text-orange-600 text-3xl">💎</span>
+                </div>
+                <h4 className="text-lg font-medium text-slate-900">보석</h4>
+              </Card>
+              
+              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-18 h-18 mx-auto mb-5 bg-green-100 rounded-lg flex items-center justify-center">
+                  <span className="text-green-600 text-3xl">👜</span>
+                </div>
+                <h4 className="text-lg font-medium text-slate-900">명품 가방</h4>
+              </Card>
+              
+              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-18 h-18 mx-auto mb-5 bg-red-100 rounded-lg flex items-center justify-center">
+                  <span className="text-red-600 text-3xl">⌚</span>
+                </div>
+                <h4 className="text-lg font-medium text-slate-900">시계</h4>
+              </Card>
+              
+              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-18 h-18 mx-auto mb-5 bg-pink-100 rounded-lg flex items-center justify-center">
+                  <span className="text-pink-600 text-3xl">👗</span>
+                </div>
+                <h4 className="text-lg font-medium text-slate-900">패션</h4>
+              </Card>
+              
+              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-18 h-18 mx-auto mb-5 bg-indigo-100 rounded-lg flex items-center justify-center">
+                  <span className="text-indigo-600 text-3xl">🎮</span>
+                </div>
+                <h4 className="text-lg font-medium text-slate-900">게임</h4>
+              </Card>
+              
+              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-18 h-18 mx-auto mb-5 bg-yellow-100 rounded-lg flex items-center justify-center">
+                  <span className="text-yellow-600 text-3xl">🏠</span>
+                </div>
+                <h4 className="text-lg font-medium text-slate-900">부동산</h4>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-16">
@@ -260,7 +377,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-slate-900 text-white py-20">
+      <section className="bg-black text-white py-20">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
@@ -283,62 +400,168 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="container mx-auto px-4 py-20 text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">
-            지금 시작하세요
-          </h2>
-          <p className="text-xl text-slate-600 mb-8">
-            MegaAuction에서 특별한 상품을 발견하고 경매에 참여해보세요
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8 py-6">
-              무료로 시작하기
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6">
-              더 알아보기
-            </Button>
+      {/* CTA Section with Floating Cards */}
+      <section className="bg-gradient-to-br from-amber-50 to-orange-50 py-20 relative overflow-hidden">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center relative">
+            {/* Floating Profile Cards */}
+            {/* Top Left Card */}
+            <div className="absolute -top-8 -left-8 w-32 h-32 bg-white rounded-2xl shadow-lg p-2 transform rotate-3">
+              <Image 
+                src="https://i.pravatar.cc/120?img=6" 
+                alt="아트 컬렉터" 
+                width={120} 
+                height={120} 
+                className="w-full h-full object-cover rounded-xl"
+              />
+              <div className="absolute -bottom-2 -right-2 bg-pink-500 text-white px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1">
+                🎨 아트 컬렉터
+              </div>
+            </div>
+
+            {/* Top Right Card */}
+            <div className="absolute -top-8 -right-8 w-32 h-32 bg-white rounded-2xl shadow-lg p-2 transform -rotate-3">
+              <Image 
+                src="https://i.pravatar.cc/120?img=7" 
+                alt="럭셔리 바이어" 
+                width={120} 
+                height={120} 
+                className="w-full h-full object-cover rounded-xl"
+              />
+              <div className="absolute -bottom-2 -right-2 bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1">
+                💎 럭셔리 바이어
+              </div>
+            </div>
+
+            {/* Bottom Left Card */}
+            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-white rounded-2xl shadow-lg p-2 transform -rotate-3">
+              <Image 
+                src="https://i.pravatar.cc/120?img=8" 
+                alt="판매자" 
+                width={120} 
+                height={120} 
+                className="w-full h-full object-cover rounded-xl"
+              />
+              <div className="absolute -bottom-2 -right-2 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1">
+                🛍️ 판매자
+              </div>
+            </div>
+
+            {/* Bottom Right Card */}
+            <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-white rounded-2xl shadow-lg p-2 transform rotate-3">
+              <Image 
+                src="https://i.pravatar.cc/120?img=9" 
+                alt="입찰자" 
+                width={120} 
+                height={120} 
+                className="w-full h-full object-cover rounded-xl"
+              />
+              <div className="absolute -bottom-2 -right-2 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1">
+                💰 입찰자
+              </div>
+            </div>
+
+            {/* Central Content */}
+            <div className="relative z-20 pt-16 pb-16">
+              <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+                <span className="block">원하는 보물을</span>
+                <span className="block text-6xl md:text-7xl">하루 만에 찾아보세요!</span>
+              </h2>
+              <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+                1000+ 크리에이터가 MegaAuction을 통해 특별한 상품을 판매하고 있습니다. 
+                경매의 스릴을 경험해보세요.
+              </p>
+              <Link href="/login">
+                <Button size="lg" className="text-lg px-8 py-6 bg-slate-900 hover:bg-slate-800">
+                  경매 시작하기
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
+      <footer className="bg-black text-white py-16">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
+          <div className="grid md:grid-cols-6 gap-8">
+            {/* Logo Section */}
+            <div className="md:col-span-1">
               <div className="text-2xl font-bold mb-4">MegaAuction</div>
-              <p className="text-slate-300">
-                24시간 경매 마켓플레이스
-              </p>
             </div>
+            
+            {/* Platform Section */}
             <div>
-              <h3 className="font-semibold mb-4">서비스</h3>
-              <ul className="space-y-2 text-slate-300">
+              <h3 className="font-semibold mb-4 text-sm uppercase tracking-wider">PLATFORM</h3>
+              <ul className="space-y-2 text-sm text-gray-300">
                 <li>경매 참여</li>
-                <li>상품 등록</li>
-                <li>리더보드</li>
+                <li>판매자 등록</li>
+                <li>크리에이터</li>
+                <li>디지털 아트 경매</li>
+                <li>스니커즈 경매</li>
+                <li>명품 가방 경매</li>
+                <li>시계 경매</li>
+                <li>부동산 경매</li>
               </ul>
             </div>
+            
+            {/* Features Section */}
             <div>
-              <h3 className="font-semibold mb-4">고객지원</h3>
-              <ul className="space-y-2 text-slate-300">
-                <li>도움말</li>
-                <li>문의하기</li>
+              <h3 className="font-semibold mb-4 text-sm uppercase tracking-wider">FEATURES</h3>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li>24시간 경매</li>
+                <li>실시간 입찰</li>
+                <li>자동 낙찰</li>
+                <li>AI 추천</li>
+                <li>경매 알림</li>
+              </ul>
+            </div>
+            
+            {/* Company Section */}
+            <div>
+              <h3 className="font-semibold mb-4 text-sm uppercase tracking-wider">COMPANY</h3>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li>파트너 프로그램</li>
+                <li>수수료 정책</li>
+                <li>개인정보처리방침</li>
                 <li>이용약관</li>
+                <li>취소 정책</li>
               </ul>
             </div>
+            
+            {/* Resources Section */}
             <div>
-              <h3 className="font-semibold mb-4">연락처</h3>
-              <ul className="space-y-2 text-slate-300">
-                <li>support@megaauction.com</li>
-                <li>02-1234-5678</li>
+              <h3 className="font-semibold mb-4 text-sm uppercase tracking-wider">RESOURCES</h3>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li>FAQ</li>
+                <li>블로그</li>
+                <li>경매 가이드</li>
+                <li>AI 상품 추천</li>
+                <li>판매자 추천</li>
+              </ul>
+            </div>
+            
+            {/* Contact Section */}
+            <div>
+              <h3 className="font-semibold mb-4 text-sm uppercase tracking-wider">CONTACT</h3>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li>고객지원</li>
+                <li>문의하기</li>
+                <li>기술지원</li>
+                <li className="flex items-center gap-2 mt-4">
+                  <span>X</span>
+                  <span>Instagram</span>
+                  <span>LinkedIn</span>
+                </li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-300">
-            <p>&copy; 2024 MegaAuction. All rights reserved.</p>
+          
+          {/* Bottom Border and Copyright */}
+          <div className="border-t border-gray-800 mt-12 pt-8">
+            <div className="text-center text-sm text-gray-400">
+              <p>&copy; 2024 MegaAuction. All rights reserved.</p>
+            </div>
           </div>
         </div>
       </footer>
