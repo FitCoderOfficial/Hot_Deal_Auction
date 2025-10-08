@@ -10,9 +10,10 @@ import { X, User, Store } from 'lucide-react'
 interface LoginModalProps {
   isOpen: boolean
   onClose: () => void
+  onLogin: (userData: {name: string, role: string}) => void
 }
 
-export function LoginModal({ isOpen, onClose }: LoginModalProps) {
+export function LoginModal({ isOpen, onClose, onLogin }: LoginModalProps) {
   const [userType, setUserType] = useState<'user' | 'seller'>('user')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -21,9 +22,12 @@ export function LoginModal({ isOpen, onClose }: LoginModalProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Implement login logic
-    console.log('Login:', { userType, email, password })
-    onClose()
+    // 임시 로그인 로직 - 실제로는 API 호출
+    const userData = {
+      name: email.split('@')[0] || '사용자',
+      role: userType
+    }
+    onLogin(userData)
   }
 
   return (
