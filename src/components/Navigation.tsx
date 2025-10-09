@@ -133,9 +133,9 @@ export function Navigation() {
                         </div>
                       </div>
                     </div>
-                    <div className="p-2 text-sm text-slate-600 flex items-center justify-between hover:bg-slate-50">
+                    <Link href="/cart" onClick={() => setOpenMenu('none')} className="p-2 text-sm text-slate-600 flex items-center justify-between hover:bg-slate-50">
                       장바구니 보기 <ChevronRight className="w-4 h-4" />
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </>
@@ -160,21 +160,21 @@ export function Navigation() {
                     </div>
                     {/* Items */}
                     <div className="py-2">
-                      <button className="w-full px-4 py-3 text-sm flex items-center gap-3 text-orange-600 hover:bg-orange-50">
+                      <Link href="/account/complete-profile" onClick={() => setOpenMenu('none')} className="w-full px-4 py-3 text-sm flex items-center gap-3 text-orange-600 hover:bg-orange-50">
                         <Zap className="w-4 h-4" /> 프로필 설정 완료하기
-                      </button>
-                      <button className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
+                      </Link>
+                      <Link href="/account/profile" onClick={() => setOpenMenu('none')} className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
                         <User className="w-4 h-4 text-slate-600" /> 내 프로필
-                      </button>
-                      <button className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
+                      </Link>
+                      <Link href="/settings" onClick={() => setOpenMenu('none')} className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
                         <Settings className="w-4 h-4 text-slate-600" /> 설정
-                      </button>
-                      <button className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
+                      </Link>
+                      <Link href="/support" onClick={() => setOpenMenu('none')} className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
                         <HelpCircle className="w-4 h-4 text-slate-600" /> 고객 지원
-                      </button>
-                      <button className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
+                      </Link>
+                      <Link href="/refer" onClick={() => setOpenMenu('none')} className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
                         <Trophy className="w-4 h-4 text-slate-600" /> 친구 초대하고 혜택 받기
-                      </button>
+                      </Link>
                     </div>
                     {/* Logout */}
                     <div className="border-t">
@@ -234,21 +234,21 @@ export function Navigation() {
                 {isLoggedIn ? (
                   <div className="space-y-1">
                     <div className="px-3 py-2 text-base md:text-lg font-bold text-slate-800">내 계정</div>
-                    <button className="w-full px-4 py-3 text-sm flex items-center gap-3 text-orange-600 hover:bg-orange-50">
+                    <Link href="/account/complete-profile" className="w-full px-4 py-3 text-sm flex items-center gap-3 text-orange-600 hover:bg-orange-50">
                       <Zap className="w-4 h-4" /> 프로필 설정 완료하기
-                    </button>
-                    <button className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
+                    </Link>
+                    <Link href="/account/profile" className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
                       <User className="w-4 h-4 text-slate-600" /> 내 프로필
-                    </button>
-                    <button className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
+                    </Link>
+                    <Link href="/settings" className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
                       <Settings className="w-4 h-4 text-slate-600" /> 설정
-                    </button>
-                    <button className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
+                    </Link>
+                    <Link href="/support" className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
                       <HelpCircle className="w-4 h-4 text-slate-600" /> 고객 지원
-                    </button>
-                    <button className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
+                    </Link>
+                    <Link href="/refer" className="w-full px-4 py-3 text-sm flex items-center gap-3 hover:bg-slate-50">
                       <Trophy className="w-4 h-4 text-slate-600" /> 친구 초대하고 혜택 받기
-                    </button>
+                    </Link>
                     <div className="border-t pt-2">
                       <button onClick={handleLogout} className="w-full px-4 py-3 text-sm flex items-center gap-3 text-red-600 hover:bg-red-50">
                         <LogOut className="w-4 h-4" /> 로그아웃

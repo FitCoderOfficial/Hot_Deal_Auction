@@ -24,19 +24,19 @@ export default function SignupPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      <div className="pt-16">
+      <div>
       
-      <div className="container mx-auto px-4 py-20">
+      <div className="container mx-auto px-4 py-6">
         <div className="max-w-lg mx-auto">
           <Card className="border-0 shadow-none">
-            <CardHeader className="text-center py-8">
+            <CardHeader className="text-center py-4">
               <CardTitle className="text-3xl">회원가입</CardTitle>
               <CardDescription className="text-lg">
                 MegaAuction에 가입하여 특별한 경매를 경험해보세요
               </CardDescription>
             </CardHeader>
-            <CardContent className="px-8 pb-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
+            <CardContent className="px-6 pb-6">
+              <form onSubmit={handleSubmit} className="space-y-5">
                 {/* User Type Selection */}
                 <div className="space-y-3">
                   <Label className="text-center block text-lg">계정 유형을 선택하세요</Label>
@@ -44,7 +44,7 @@ export default function SignupPage() {
                     <Button
                       type="button"
                       variant={userType === 'user' ? 'default' : 'outline'}
-                      className="flex-1 h-12 text-base"
+                      className="flex-1 h-11 text-base"
                       onClick={() => setUserType('user')}
                     >
                       일반 사용자
@@ -52,7 +52,7 @@ export default function SignupPage() {
                     <Button
                       type="button"
                       variant={userType === 'seller' ? 'default' : 'outline'}
-                      className="flex-1 h-12 text-base"
+                      className="flex-1 h-11 text-base"
                       onClick={() => setUserType('seller')}
                     >
                       판매자
@@ -69,7 +69,7 @@ export default function SignupPage() {
                     placeholder="이름을 입력하세요"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="h-12 text-base"
+                    className="h-11 text-base"
                     required
                   />
                 </div>
@@ -83,7 +83,7 @@ export default function SignupPage() {
                     placeholder="이메일을 입력하세요"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="h-12 text-base"
+                    className="h-11 text-base"
                     required
                   />
                 </div>
@@ -97,7 +97,7 @@ export default function SignupPage() {
                     placeholder="비밀번호를 입력하세요"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="h-12 text-base"
+                    className="h-11 text-base"
                     required
                   />
                 </div>
@@ -111,19 +111,19 @@ export default function SignupPage() {
                     placeholder="비밀번호를 다시 입력하세요"
                     value={confirmPassword}
                     onChange={(e) => setConfirmPassword(e.target.value)}
-                    className="h-12 text-base"
+                    className="h-11 text-base"
                     required
                   />
                 </div>
 
 
                 {/* Signup Button */}
-                <Button type="submit" className="w-full h-12 text-lg">
+                <Button type="submit" className="w-full h-11 text-lg">
                   회원가입
                 </Button>
 
                 {/* Login Link */}
-                <div className="text-center mt-4">
+                <div className="text-center mt-3">
                   <p className="text-sm text-slate-600">
                     이미 계정이 있으신가요?{' '}
                     <Link 
