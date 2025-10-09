@@ -254,63 +254,77 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Role Cards - Responsive Layout */}
+          {/* Role Cards - Fixed Layout */}
           <div className="w-full py-4">
-            <div className="flex items-center justify-center gap-4 flex-wrap px-4">
-              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
-                <div className="w-18 h-18 mx-auto mb-5 bg-purple-100 rounded-lg flex items-center justify-center">
-                  <span className="text-purple-600 text-3xl">🎨</span>
+            <div className="flex items-center justify-center gap-4 px-4 overflow-x-auto">
+              <Card className="p-10 text-center bg-white rounded-xl border-2 border-yellow-300 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-20 h-20 mx-auto mb-5 flex items-center justify-center">
+                  <span className="text-8xl">🎨</span>
                 </div>
                 <h4 className="text-lg font-medium text-slate-900">디지털 아트</h4>
               </Card>
               
-              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
-                <div className="w-18 h-18 mx-auto mb-5 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <span className="text-blue-600 text-3xl">👟</span>
+              <Card className="p-10 text-center bg-gray-100 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-20 h-20 mx-auto mb-5 flex items-center justify-center">
+                  <span className="text-8xl">👟</span>
                 </div>
                 <h4 className="text-lg font-medium text-slate-900">스니커즈</h4>
               </Card>
               
-              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
-                <div className="w-18 h-18 mx-auto mb-5 bg-orange-100 rounded-lg flex items-center justify-center">
-                  <span className="text-orange-600 text-3xl">💎</span>
+              <Card className="p-10 text-center bg-white rounded-xl border-2 border-yellow-300 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-20 h-20 mx-auto mb-5 flex items-center justify-center">
+                  <span className="text-8xl">💎</span>
                 </div>
                 <h4 className="text-lg font-medium text-slate-900">보석</h4>
               </Card>
               
-              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
-                <div className="w-18 h-18 mx-auto mb-5 bg-green-100 rounded-lg flex items-center justify-center">
-                  <span className="text-green-600 text-3xl">👜</span>
+              <Card className="p-10 text-center bg-gray-100 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-20 h-20 mx-auto mb-5 flex items-center justify-center">
+                  <span className="text-8xl">👜</span>
                 </div>
                 <h4 className="text-lg font-medium text-slate-900">명품 가방</h4>
               </Card>
               
-              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
-                <div className="w-18 h-18 mx-auto mb-5 bg-red-100 rounded-lg flex items-center justify-center">
-                  <span className="text-red-600 text-3xl">⌚</span>
+              <Card className="p-10 text-center bg-white rounded-xl border-2 border-yellow-300 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-20 h-20 mx-auto mb-5 flex items-center justify-center">
+                  <span className="text-8xl">⌚</span>
                 </div>
                 <h4 className="text-lg font-medium text-slate-900">시계</h4>
               </Card>
               
-              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
-                <div className="w-18 h-18 mx-auto mb-5 bg-pink-100 rounded-lg flex items-center justify-center">
-                  <span className="text-pink-600 text-3xl">👗</span>
+              <Card className="p-10 text-center bg-gray-100 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-20 h-20 mx-auto mb-5 flex items-center justify-center">
+                  <span className="text-8xl">👗</span>
                 </div>
                 <h4 className="text-lg font-medium text-slate-900">패션</h4>
               </Card>
               
-              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
-                <div className="w-18 h-18 mx-auto mb-5 bg-indigo-100 rounded-lg flex items-center justify-center">
-                  <span className="text-indigo-600 text-3xl">🎮</span>
+              <Card className="p-10 text-center bg-white rounded-xl border-2 border-yellow-300 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-20 h-20 mx-auto mb-5 flex items-center justify-center">
+                  <span className="text-8xl">🎮</span>
                 </div>
                 <h4 className="text-lg font-medium text-slate-900">게임</h4>
               </Card>
               
-              <Card className="p-10 text-center bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
-                <div className="w-18 h-18 mx-auto mb-5 bg-yellow-100 rounded-lg flex items-center justify-center">
-                  <span className="text-yellow-600 text-3xl">🏠</span>
+              <Card className="p-10 text-center bg-gray-100 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-20 h-20 mx-auto mb-5 flex items-center justify-center">
+                  <span className="text-8xl">🏠</span>
                 </div>
                 <h4 className="text-lg font-medium text-slate-900">부동산</h4>
+              </Card>
+              
+              <Card className="p-10 text-center bg-white rounded-xl border-2 border-yellow-300 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-20 h-20 mx-auto mb-5 flex items-center justify-center">
+                  <span className="text-8xl">📱</span>
+                </div>
+                <h4 className="text-lg font-medium text-slate-900">전자제품</h4>
+              </Card>
+              
+              <Card className="p-10 text-center bg-gray-100 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow min-w-[220px]">
+                <div className="w-20 h-20 mx-auto mb-5 flex items-center justify-center">
+                  <span className="text-8xl">🎵</span>
+                </div>
+                <h4 className="text-lg font-medium text-slate-900">음악</h4>
               </Card>
             </div>
           </div>

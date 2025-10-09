@@ -126,6 +126,19 @@ export default function LoginPage() {
                 <Button type="submit" className="w-full h-12 text-lg">
                   로그인
                 </Button>
+
+                {/* Sign Up Link */}
+                <div className="text-center mt-4">
+                  <p className="text-sm text-slate-600">
+                    계정이 없으신가요?{' '}
+                    <Link 
+                      href="/signup"
+                      className="text-blue-600 hover:text-blue-800 font-medium underline"
+                    >
+                      회원가입
+                    </Link>
+                  </p>
+                </div>
               </form>
             </CardContent>
           </Card>

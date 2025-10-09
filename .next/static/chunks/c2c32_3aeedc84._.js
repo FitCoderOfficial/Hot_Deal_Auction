@@ -8869,6 +8869,12 @@ const configEnv = ("TURBOPACK compile-time value", {
             "hostname": ("TURBOPACK compile-time value", "images.unsplash.com"),
             "port": ("TURBOPACK compile-time value", ""),
             "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "i.pravatar.cc"),
+            "port": ("TURBOPACK compile-time value", ""),
+            "pathname": ("TURBOPACK compile-time value", "/**")
         })
     ])
 });
@@ -9219,6 +9225,12 @@ function getImageProps(imgProps) {
                 ("TURBOPACK compile-time value", {
                     "protocol": ("TURBOPACK compile-time value", "https"),
                     "hostname": ("TURBOPACK compile-time value", "images.unsplash.com"),
+                    "port": ("TURBOPACK compile-time value", ""),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "i.pravatar.cc"),
                     "port": ("TURBOPACK compile-time value", ""),
                     "pathname": ("TURBOPACK compile-time value", "/**")
                 })
