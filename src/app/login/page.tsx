@@ -15,13 +15,27 @@ export default function LoginPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // 로그인 로직 구현
-    console.log('Login:', { userType, email, password })
+    // 임시 로그인 로직 - 아무 이메일/비밀번호로 로그인 가능
+    if (email && password) {
+      // 로그인 상태로 설정
+      localStorage.setItem('isLoggedIn', 'true')
+      localStorage.setItem('userInfo', JSON.stringify({
+        name: email.split('@')[0],
+        role: userType,
+        email: email
+      }))
+      
+      // 메인 페이지로 리다이렉트
+      window.location.href = '/'
+    } else {
+      alert('이메일과 비밀번호를 입력해주세요.')
+    }
   }
 
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
+      <div className="pt-16">
       
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-lg mx-auto">
@@ -143,6 +157,7 @@ export default function LoginPage() {
             </CardContent>
           </Card>
         </div>
+      </div>
       </div>
     </div>
   )

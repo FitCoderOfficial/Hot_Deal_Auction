@@ -24,6 +24,7 @@ export default function SignupPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
+      <div className="pt-16">
       
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-lg mx-auto">
@@ -137,6 +138,7 @@ export default function SignupPage() {
             </CardContent>
           </Card>
         </div>
+      </div>
       </div>
     </div>
   )
