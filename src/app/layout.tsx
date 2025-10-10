@@ -25,10 +25,67 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-50`}
       >
-        <div className="pt-16">
-          {children}
+        <div className="min-h-screen flex flex-col pt-16">
+          <div className="flex-1">
+            {children}
+          </div>
+          <footer className="bg-black text-white py-16">
+            <div className="container mx-auto px-4">
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div>
+                  <h3 className="font-semibold mb-3">MegaAuction</h3>
+                  <ul className="space-y-2 text-sm text-gray-300">
+                    <li><a href="/auctions" className="hover:text-white">경매 참여</a></li>
+                    <li><a href="/account/complete-profile" className="hover:text-white">판매자 등록</a></li>
+                    <li><a href="/leaderboard" className="hover:text-white">순위</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-3">FEATURES</h3>
+                  <ul className="space-y-2 text-sm text-gray-300">
+                    <li><a href="#" className="hover:text-white transition-colors">24시간 경매</a></li>
+                    <li><a href="#" className="hover:text-white transition-colors">실시간 입찰</a></li>
+                    <li><a href="#" className="hover:text-white transition-colors">AI 추천</a></li>
+                    <li><a href="#" className="hover:text-white transition-colors">경매 알림</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-3">COMPANY</h3>
+                  <ul className="space-y-2 text-sm text-gray-300">
+                    <li><a href="/refer" className="hover:text-white">파트너 프로그램</a></li>
+                    <li><a href="#" className="hover:text-white">수수료 정책</a></li>
+                    <li><a href="#" className="hover:text-white">개인정보처리방침</a></li>
+                    <li><a href="#" className="hover:text-white">이용약관</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-3">RESOURCES</h3>
+                  <ul className="space-y-2 text-sm text-gray-300">
+                    <li><a href="/support" className="hover:text-white">FAQ</a></li>
+                    <li><a href="#" className="hover:text-white">블로그</a></li>
+                    <li><a href="#" className="hover:text-white">경매 가이드</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-3">CONTACT</h3>
+                  <ul className="space-y-2 text-sm text-gray-300">
+                    <li><a href="/support" className="hover:text-white">고객지원</a></li>
+                    <li><a href="#" className="hover:text-white">문의하기</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="border-t border-white/10 mt-10 pt-6 text-sm text-gray-400 flex items-center justify-between">
+                <span>© {new Date().getFullYear()} MegaAuction. All rights reserved.</span>
+                <div className="flex items-center gap-4">
+                  <a href="#" className="hover:text-white">X</a>
+                  <a href="#" className="hover:text-white">Instagram</a>
+                  <a href="#" className="hover:text-white">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
       </body>
     </html>

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Clock, Heart, ShoppingCart } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 interface ProductCardProps {
   id: string
@@ -115,7 +116,8 @@ export function ProductCard({
 
   return (
     <Card className="group overflow-hidden h-full flex flex-col w-full max-w-sm p-0">
-      <div className="relative aspect-square overflow-hidden">
+      <Link href={`/products/${id}`} className="block">
+        <div className="relative aspect-square overflow-hidden">
         {!imageError ? (
           <Image
             src={imageUrl}
@@ -151,7 +153,11 @@ export function ProductCard({
               size="sm"
               variant="secondary"
               className={`rounded-full shadow-md transition-transform ${liked ? 'scale-110' : ''}`}
-              onClick={toggleLike}
+              onClick={(e) => {
+                e.preventDefault()
+                e.stopPropagation()
+                toggleLike()
+              }}
             >
               <Heart
                 className={`w-4 h-4 transition-colors ${liked ? 'text-red-500' : 'text-slate-600'}`}
@@ -161,6 +167,7 @@ export function ProductCard({
           </div>
         </div>
       </div>
+      </Link>
       
       <CardHeader className="pb-2 flex-shrink-0">
         <div className="text-sm text-gray-500 -mb-1">
