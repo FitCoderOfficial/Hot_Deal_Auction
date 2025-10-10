@@ -11,6 +11,7 @@ export default function ReferPage() {
   const [url, setUrl] = useState("https://megaauction.app/referral=신새벽")
   const [aboutText, setAboutText] = useState("MegaAuction은 크리에이터와 팬을 위한 24시간 경매 플랫폼입니다. 디지털 아트, 한정판 굿즈, 스니커즈 등 다양한 상품을 실시간으로 거래할 수 있으며, 안전한 결제와 자동 낙찰 시스템을 제공합니다. 친구를 초대하고 함께 특별한 경매를 시작해 보세요!")
   const [toasts, setToasts] = useState<Array<{ id: number; message: string }>>([])
+  const [showLeaderboardModal, setShowLeaderboardModal] = useState(false)
   const handleCopy = async (text: string) => {
     try {
       await navigator.clipboard.writeText(text)
@@ -25,7 +26,24 @@ export default function ReferPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      <div className="pt-16">
+      
+      {/* Yellow Banner */}
+      <div className="bg-yellow-400 py-4 px-4">
+        <div className="container mx-auto flex items-center justify-center gap-3">
+          <span className="text-2xl">🏆</span>
+          <span className="text-black font-semibold text-lg">
+            추천 순위에 도전하고 특별한 리워드를 받아보세요!
+          </span>
+          <button 
+            onClick={() => setShowLeaderboardModal(true)}
+            className="text-blue-600 underline font-medium hover:text-blue-800"
+          >
+            순위 보기
+          </button>
+        </div>
+      </div>
+      
+      <div className="pt-8">
         <div className="container mx-auto px-4 py-12 grid lg:grid-cols-2 gap-8 items-start">
           {/* Toast stack */}
           <div className="fixed top-20 right-6 z-50 flex flex-col gap-2 items-end">
@@ -114,7 +132,7 @@ export default function ReferPage() {
           </p>
 
           <div className="mt-4">
-            <Link href="/leaderboard" className="text-indigo-600 underline">추천 리더보드 보기</Link>
+            <Link href="/leaderboard" className="text-indigo-600 underline">추천 순위 보기</Link>
           </div>
           </div>
 
@@ -145,6 +163,96 @@ export default function ReferPage() {
           </div>
         </div>
       </div>
+
+      {/* Leaderboard Modal */}
+      {showLeaderboardModal && (
+        <div className="fixed inset-0 bg-black/20 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-hidden shadow-2xl">
+            {/* Modal Header */}
+            <div className="flex items-center justify-between p-6 border-b border-slate-200">
+              <h2 className="text-2xl font-bold text-slate-900">추천 순위</h2>
+              <button 
+                onClick={() => setShowLeaderboardModal(false)}
+                className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500 hover:text-slate-700 transition-colors"
+              >
+                ×
+              </button>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-6 overflow-y-auto max-h-[calc(85vh-120px)]">
+              {/* Info Banner */}
+              <div className="mb-8">
+                <h3 className="text-xl font-bold text-slate-900 mb-3">순위에 도전하고 특별한 리워드를 받아보세요!</h3>
+                <p className="text-slate-600 mb-4 leading-relaxed">
+                  상위 순위에 오르면 MegaAuction 굿즈, 기프트카드, 뉴스레터 소개 등 다양한 혜택을 받을 수 있습니다. 
+                  현금 수익에 더해 추가 혜택까지!
+                </p>
+                <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-4 flex items-start gap-3">
+                  <span className="text-amber-600 text-xl">⚠️</span>
+                  <p className="text-amber-800 text-sm font-medium">
+                    추천 링크를 통한 가입만 순위에 반영됩니다.
+                  </p>
+                </div>
+              </div>
+
+              {/* Leaderboard List */}
+              <div className="space-y-2">
+                {[
+                  { rank: 1, name: '김경매러', referrals: 8, avatar: 'https://i.pravatar.cc/40?img=1', reward: '🏆', color: 'bg-gradient-to-r from-yellow-400 to-yellow-500' },
+                  { rank: 2, name: '이수집가', referrals: 6, avatar: 'https://i.pravatar.cc/40?img=2', reward: '🥈', color: 'bg-gradient-to-r from-gray-300 to-gray-400' },
+                  { rank: 3, name: '박아티스트', referrals: 5, avatar: 'https://i.pravatar.cc/40?img=3', reward: '🥉', color: 'bg-gradient-to-r from-amber-600 to-amber-700' },
+                  { rank: 4, name: '최굿즈러', referrals: 4, avatar: 'https://i.pravatar.cc/40?img=4', reward: '👑', color: 'bg-gradient-to-r from-blue-400 to-blue-500' },
+                  { rank: 5, name: '정한정판러', referrals: 3, avatar: 'https://i.pravatar.cc/40?img=5', reward: '👑', color: 'bg-gradient-to-r from-purple-400 to-purple-500' },
+                  { rank: 6, name: '강아트러버', referrals: 2, avatar: 'https://i.pravatar.cc/40?img=6', reward: '👑', color: 'bg-gradient-to-r from-green-400 to-green-500' },
+                  { rank: 7, name: '윤컬렉터', referrals: 2, avatar: 'https://i.pravatar.cc/40?img=7', reward: '👑', color: 'bg-gradient-to-r from-pink-400 to-pink-500' },
+                  { rank: 8, name: '임빈티지러', referrals: 1, avatar: 'https://i.pravatar.cc/40?img=8', reward: '👑', color: 'bg-gradient-to-r from-indigo-400 to-indigo-500' },
+                  { rank: 9, name: '서디자이너', referrals: 1, avatar: 'https://i.pravatar.cc/40?img=9', reward: '👑', color: 'bg-gradient-to-r from-teal-400 to-teal-500' },
+                  { rank: 10, name: '한스타일러', referrals: 1, avatar: 'https://i.pravatar.cc/40?img=10', reward: '👑', color: 'bg-gradient-to-r from-orange-400 to-orange-500' }
+                ].map((user, index) => (
+                  <div 
+                    key={user.rank} 
+                    className="flex items-center gap-4 p-4 bg-white border border-slate-200 rounded-xl hover:shadow-md transition-all duration-200 opacity-0 animate-fade-in"
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
+                    <div className="w-8 h-8 flex items-center justify-center text-slate-600 font-bold text-lg">
+                      {user.rank}
+                    </div>
+                    <img 
+                      src={user.avatar} 
+                      alt={user.name}
+                      className="w-12 h-12 rounded-full border-2 border-white shadow-md"
+                    />
+                    <div className="flex-1">
+                      <div className="font-semibold text-slate-900 text-lg">{user.name}</div>
+                    </div>
+                    <div className="bg-slate-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">
+                      {user.referrals}명 추천
+                    </div>
+                    <div className="text-3xl">{user.reward}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <style jsx>{`
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-fade-in {
+          animation: fade-in 0.6s ease-out forwards;
+        }
+      `}</style>
     </div>
   )
 }

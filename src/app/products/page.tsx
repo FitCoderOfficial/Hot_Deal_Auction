@@ -247,14 +247,10 @@ export default function ProductsPage() {
                       </div>
                     </div>
                     <div className="text-right whitespace-nowrap">
-                      {p.isAuction ? (
-                        <>
-                          <div className="text-blue-600 font-bold">현재 입찰가 {new Intl.NumberFormat('ko-KR').format(p.currentBid ?? 0)}원</div>
-                          <div className="text-sm text-muted-foreground">입찰 {p.bidCount ?? 0}건</div>
-                        </>
-                      ) : (
-                        <div className="text-slate-900 font-bold">{new Intl.NumberFormat('ko-KR').format(p.price)}원</div>
-                      )}
+                      <div className="text-sm text-muted-foreground mb-1">현재 입찰가</div>
+                      <div className="text-blue-600 font-bold text-2xl">
+                        {new Intl.NumberFormat('ko-KR').format(p.isAuction ? (p.currentBid ?? 0) : p.price)}원
+                      </div>
                     </div>
                   </div>
                 </div>

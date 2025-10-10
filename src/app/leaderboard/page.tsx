@@ -12,7 +12,12 @@ const sellerLeaderboard = [
   { rank: 2, name: '디지털아티스트', sales: 12000000, products: 32, avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&crop=faces&w=80&h=80' },
   { rank: 3, name: '스니커헤드', sales: 9800000, products: 28, avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&crop=faces&w=80&h=80' },
   { rank: 4, name: '가죽공방', sales: 7500000, products: 22, avatar: 'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&crop=faces&w=80&h=80' },
-  { rank: 5, name: '도예공방', sales: 6200000, products: 18, avatar: 'https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&crop=faces&w=80&h=80' }
+  { rank: 5, name: '도예공방', sales: 6200000, products: 18, avatar: 'https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&crop=faces&w=80&h=80' },
+  { rank: 6, name: '핸드메이드샵', sales: 5800000, products: 16, avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&crop=faces&w=80&h=80' },
+  { rank: 7, name: '빈티지컬렉션', sales: 5200000, products: 14, avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&crop=faces&w=80&h=80' },
+  { rank: 8, name: '아트갤러리', sales: 4800000, products: 12, avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&crop=faces&w=80&h=80' },
+  { rank: 9, name: '커스텀샵', sales: 4200000, products: 10, avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&crop=faces&w=80&h=80' },
+  { rank: 10, name: '디자인스튜디오', sales: 3800000, products: 8, avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&crop=faces&w=80&h=80' }
 ]
 
 const buyerLeaderboard = [
@@ -20,7 +25,12 @@ const buyerLeaderboard = [
   { rank: 2, name: '이수집가', spent: 7200000, purchases: 19, avatar: 'https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&crop=faces&w=80&h=80' },
   { rank: 3, name: '박아티스트', spent: 6800000, purchases: 17, avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&crop=faces&w=80&h=80' },
   { rank: 4, name: '최굿즈러', spent: 5400000, purchases: 15, avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&crop=faces&w=80&h=80' },
-  { rank: 5, name: '정한정판러', spent: 4200000, purchases: 12, avatar: 'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&crop=faces&w=80&h=80' }
+  { rank: 5, name: '정한정판러', spent: 4200000, purchases: 12, avatar: 'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&crop=faces&w=80&h=80' },
+  { rank: 6, name: '강아트러버', spent: 3800000, purchases: 11, avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&crop=faces&w=80&h=80' },
+  { rank: 7, name: '윤컬렉터', spent: 3500000, purchases: 10, avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&crop=faces&w=80&h=80' },
+  { rank: 8, name: '임빈티지러', spent: 3200000, purchases: 9, avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&crop=faces&w=80&h=80' },
+  { rank: 9, name: '서디자이너', spent: 2900000, purchases: 8, avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&crop=faces&w=80&h=80' },
+  { rank: 10, name: '한스타일러', spent: 2600000, purchases: 7, avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&crop=faces&w=80&h=80' }
 ]
 
 const highestSoldProducts = [
@@ -28,7 +38,12 @@ const highestSoldProducts = [
   { rank: 2, name: '디지털 아트 NFT', price: 1800000, seller: '디지털아티스트', image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=60&h=60&fit=crop' },
   { rank: 3, name: '한정판 스니커즈', price: 1500000, seller: '스니커헤드', image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=60&h=60&fit=crop' },
   { rank: 4, name: '수제 가죽 지갑', price: 1200000, seller: '가죽공방', image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=60&h=60&fit=crop' },
-  { rank: 5, name: '수제 도자기 세트', price: 980000, seller: '도예공방', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=60&h=60&fit=crop' }
+  { rank: 5, name: '수제 도자기 세트', price: 980000, seller: '도예공방', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=60&h=60&fit=crop' },
+  { rank: 6, name: '핸드메이드 목걸이', price: 850000, seller: '핸드메이드샵', image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=60&h=60&fit=crop' },
+  { rank: 7, name: '빈티지 시계', price: 750000, seller: '빈티지컬렉션', image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=60&h=60&fit=crop' },
+  { rank: 8, name: '아트 프린트', price: 650000, seller: '아트갤러리', image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=60&h=60&fit=crop' },
+  { rank: 9, name: '커스텀 케이스', price: 550000, seller: '커스텀샵', image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=60&h=60&fit=crop' },
+  { rank: 10, name: '디자인 포스터', price: 450000, seller: '디자인스튜디오', image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=60&h=60&fit=crop' }
 ]
 
 const formatPrice = (price: number) => {
@@ -49,7 +64,7 @@ export default function LeaderboardPage() {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Trophy className="w-8 h-8 text-yellow-500" />
-            <h1 className="text-4xl font-bold text-slate-900">리더보드</h1>
+            <h1 className="text-4xl font-bold text-slate-900">순위</h1>
           </div>
           <p className="text-lg text-slate-600">
             Mega Auction의 최고 판매자, 구매자, 그리고 인기 상품들을 확인해보세요
@@ -121,10 +136,10 @@ export default function LeaderboardPage() {
                         </div>
                       </div>
                       <div className="text-right">
+                        <div className="text-sm text-slate-600 mb-1">총 판매액</div>
                         <div className="font-bold text-lg text-blue-600">
                           {formatPrice(seller.sales)}
                         </div>
-                        <div className="text-sm text-slate-600">총 판매액</div>
                       </div>
                     </div>
                   ))}
@@ -163,10 +178,10 @@ export default function LeaderboardPage() {
                         </div>
                       </div>
                       <div className="text-right">
+                        <div className="text-sm text-slate-600 mb-1">총 구매액</div>
                         <div className="font-bold text-lg text-green-600">
                           {formatPrice(buyer.spent)}
                         </div>
-                        <div className="text-sm text-slate-600">총 구매액</div>
                       </div>
                     </div>
                   ))}
@@ -205,10 +220,10 @@ export default function LeaderboardPage() {
                         </div>
                       </div>
                       <div className="text-right">
+                        <div className="text-sm text-slate-600 mb-1">판매가</div>
                         <div className="font-bold text-lg text-purple-600">
                           {formatPrice(product.price)}
                         </div>
-                        <div className="text-sm text-slate-600">판매가</div>
                       </div>
                     </div>
                   ))}
@@ -218,32 +233,6 @@ export default function LeaderboardPage() {
           </div>
         )}
 
-        {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-          <Card className="text-center p-6">
-            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Users className="w-6 h-6 text-blue-600" />
-            </div>
-            <h3 className="text-2xl font-bold mb-2">1,234</h3>
-            <p className="text-slate-600">활성 판매자</p>
-          </Card>
-          
-          <Card className="text-center p-6">
-            <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <TrendingUp className="w-6 h-6 text-green-600" />
-            </div>
-            <h3 className="text-2xl font-bold mb-2">5,678</h3>
-            <p className="text-slate-600">활성 구매자</p>
-          </Card>
-          
-          <Card className="text-center p-6">
-            <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Trophy className="w-6 h-6 text-purple-600" />
-            </div>
-            <h3 className="text-2xl font-bold mb-2">₩2.5B+</h3>
-            <p className="text-slate-600">총 거래액</p>
-          </Card>
-        </div>
       </div>
     </div>
   )

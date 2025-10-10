@@ -382,7 +382,7 @@ function Navigation() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     href: "/leaderboard",
                                     className: "text-slate-600 hover:text-slate-900 transition-colors",
-                                    children: "리더보드"
+                                    children: "순위"
                                 }, void 0, false, {
                                     fileName: "[project]/MegaAuction/src/components/Navigation.tsx",
                                     lineNumber: 67,
@@ -1100,7 +1100,7 @@ function Navigation() {
                                 href: "/leaderboard",
                                 className: "block text-slate-600 hover:text-slate-900 transition-colors",
                                 onClick: ()=>setIsMenuOpen(false),
-                                children: "리더보드"
+                                children: "순위"
                             }, void 0, false, {
                                 fileName: "[project]/MegaAuction/src/components/Navigation.tsx",
                                 lineNumber: 226,
@@ -1349,6 +1349,41 @@ const sellerLeaderboard = [
         sales: 6200000,
         products: 18,
         avatar: 'https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&crop=faces&w=80&h=80'
+    },
+    {
+        rank: 6,
+        name: '핸드메이드샵',
+        sales: 5800000,
+        products: 16,
+        avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&crop=faces&w=80&h=80'
+    },
+    {
+        rank: 7,
+        name: '빈티지컬렉션',
+        sales: 5200000,
+        products: 14,
+        avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&crop=faces&w=80&h=80'
+    },
+    {
+        rank: 8,
+        name: '아트갤러리',
+        sales: 4800000,
+        products: 12,
+        avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&crop=faces&w=80&h=80'
+    },
+    {
+        rank: 9,
+        name: '커스텀샵',
+        sales: 4200000,
+        products: 10,
+        avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&crop=faces&w=80&h=80'
+    },
+    {
+        rank: 10,
+        name: '디자인스튜디오',
+        sales: 3800000,
+        products: 8,
+        avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&crop=faces&w=80&h=80'
     }
 ];
 const buyerLeaderboard = [
@@ -1386,6 +1421,41 @@ const buyerLeaderboard = [
         spent: 4200000,
         purchases: 12,
         avatar: 'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&crop=faces&w=80&h=80'
+    },
+    {
+        rank: 6,
+        name: '강아트러버',
+        spent: 3800000,
+        purchases: 11,
+        avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&crop=faces&w=80&h=80'
+    },
+    {
+        rank: 7,
+        name: '윤컬렉터',
+        spent: 3500000,
+        purchases: 10,
+        avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&crop=faces&w=80&h=80'
+    },
+    {
+        rank: 8,
+        name: '임빈티지러',
+        spent: 3200000,
+        purchases: 9,
+        avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&crop=faces&w=80&h=80'
+    },
+    {
+        rank: 9,
+        name: '서디자이너',
+        spent: 2900000,
+        purchases: 8,
+        avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&crop=faces&w=80&h=80'
+    },
+    {
+        rank: 10,
+        name: '한스타일러',
+        spent: 2600000,
+        purchases: 7,
+        avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&crop=faces&w=80&h=80'
     }
 ];
 const highestSoldProducts = [
@@ -1423,6 +1493,41 @@ const highestSoldProducts = [
         price: 980000,
         seller: '도예공방',
         image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=60&h=60&fit=crop'
+    },
+    {
+        rank: 6,
+        name: '핸드메이드 목걸이',
+        price: 850000,
+        seller: '핸드메이드샵',
+        image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=60&h=60&fit=crop'
+    },
+    {
+        rank: 7,
+        name: '빈티지 시계',
+        price: 750000,
+        seller: '빈티지컬렉션',
+        image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=60&h=60&fit=crop'
+    },
+    {
+        rank: 8,
+        name: '아트 프린트',
+        price: 650000,
+        seller: '아트갤러리',
+        image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=60&h=60&fit=crop'
+    },
+    {
+        rank: 9,
+        name: '커스텀 케이스',
+        price: 550000,
+        seller: '커스텀샵',
+        image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=60&h=60&fit=crop'
+    },
+    {
+        rank: 10,
+        name: '디자인 포스터',
+        price: 450000,
+        seller: '디자인스튜디오',
+        image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=60&h=60&fit=crop'
     }
 ];
 const formatPrice = (price)=>{
@@ -1439,7 +1544,7 @@ function LeaderboardPage() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$Navigation$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Navigation"], {}, void 0, false, {
                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                lineNumber: 46,
+                lineNumber: 61,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1455,21 +1560,21 @@ function LeaderboardPage() {
                                         className: "w-8 h-8 text-yellow-500"
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 51,
+                                        lineNumber: 66,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                         className: "text-4xl font-bold text-slate-900",
-                                        children: "리더보드"
+                                        children: "순위"
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 52,
+                                        lineNumber: 67,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                lineNumber: 50,
+                                lineNumber: 65,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1477,13 +1582,13 @@ function LeaderboardPage() {
                                 children: "Mega Auction의 최고 판매자, 구매자, 그리고 인기 상품들을 확인해보세요"
                             }, void 0, false, {
                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                lineNumber: 54,
+                                lineNumber: 69,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                        lineNumber: 49,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1497,7 +1602,7 @@ function LeaderboardPage() {
                                     children: "판매자 순위"
                                 }, void 0, false, {
                                     fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                    lineNumber: 62,
+                                    lineNumber: 77,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1506,7 +1611,7 @@ function LeaderboardPage() {
                                     children: "구매자 순위"
                                 }, void 0, false, {
                                     fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                    lineNumber: 72,
+                                    lineNumber: 87,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1515,18 +1620,18 @@ function LeaderboardPage() {
                                     children: "인기 상품"
                                 }, void 0, false, {
                                     fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                    lineNumber: 82,
+                                    lineNumber: 97,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                            lineNumber: 61,
+                            lineNumber: 76,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                        lineNumber: 60,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this),
                     activeTab === 'sellers' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1542,19 +1647,19 @@ function LeaderboardPage() {
                                                 className: "w-5 h-5 text-blue-600"
                                             }, void 0, false, {
                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                lineNumber: 101,
+                                                lineNumber: 116,
                                                 columnNumber: 19
                                             }, this),
                                             "판매자 순위"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 115,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                    lineNumber: 99,
+                                    lineNumber: 114,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1571,7 +1676,7 @@ function LeaderboardPage() {
                                                                 children: seller.rank
                                                             }, void 0, false, {
                                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 110,
+                                                                lineNumber: 125,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -1580,7 +1685,7 @@ function LeaderboardPage() {
                                                                 className: "w-10 h-10 rounded-full object-cover"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 113,
+                                                                lineNumber: 128,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1590,7 +1695,7 @@ function LeaderboardPage() {
                                                                         children: seller.name
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                        lineNumber: 119,
+                                                                        lineNumber: 134,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1601,71 +1706,71 @@ function LeaderboardPage() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                        lineNumber: 120,
+                                                                        lineNumber: 135,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 118,
+                                                                lineNumber: 133,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                        lineNumber: 109,
+                                                        lineNumber: 124,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "text-right",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "text-sm text-slate-600 mb-1",
+                                                                children: "총 판매액"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
+                                                                lineNumber: 139,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "font-bold text-lg text-blue-600",
                                                                 children: formatPrice(seller.sales)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 124,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "text-sm text-slate-600",
-                                                                children: "총 판매액"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 127,
+                                                                lineNumber: 140,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                        lineNumber: 123,
+                                                        lineNumber: 138,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, seller.rank, true, {
                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                lineNumber: 108,
+                                                lineNumber: 123,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 106,
+                                        lineNumber: 121,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                    lineNumber: 105,
+                                    lineNumber: 120,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                            lineNumber: 98,
+                            lineNumber: 113,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                        lineNumber: 97,
+                        lineNumber: 112,
                         columnNumber: 11
                     }, this),
                     activeTab === 'buyers' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1681,19 +1786,19 @@ function LeaderboardPage() {
                                                 className: "w-5 h-5 text-green-600"
                                             }, void 0, false, {
                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                lineNumber: 143,
+                                                lineNumber: 158,
                                                 columnNumber: 19
                                             }, this),
                                             "구매자 순위"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 142,
+                                        lineNumber: 157,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                    lineNumber: 141,
+                                    lineNumber: 156,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1710,7 +1815,7 @@ function LeaderboardPage() {
                                                                 children: buyer.rank
                                                             }, void 0, false, {
                                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 152,
+                                                                lineNumber: 167,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -1719,7 +1824,7 @@ function LeaderboardPage() {
                                                                 className: "w-10 h-10 rounded-full object-cover"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 155,
+                                                                lineNumber: 170,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1729,7 +1834,7 @@ function LeaderboardPage() {
                                                                         children: buyer.name
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                        lineNumber: 161,
+                                                                        lineNumber: 176,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1740,71 +1845,71 @@ function LeaderboardPage() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                        lineNumber: 162,
+                                                                        lineNumber: 177,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 160,
+                                                                lineNumber: 175,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                        lineNumber: 151,
+                                                        lineNumber: 166,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "text-right",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "text-sm text-slate-600 mb-1",
+                                                                children: "총 구매액"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
+                                                                lineNumber: 181,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "font-bold text-lg text-green-600",
                                                                 children: formatPrice(buyer.spent)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 166,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "text-sm text-slate-600",
-                                                                children: "총 구매액"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 169,
+                                                                lineNumber: 182,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                        lineNumber: 165,
+                                                        lineNumber: 180,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, buyer.rank, true, {
                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                lineNumber: 150,
+                                                lineNumber: 165,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 148,
+                                        lineNumber: 163,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                    lineNumber: 147,
+                                    lineNumber: 162,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                            lineNumber: 140,
+                            lineNumber: 155,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                        lineNumber: 139,
+                        lineNumber: 154,
                         columnNumber: 11
                     }, this),
                     activeTab === 'products' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1820,19 +1925,19 @@ function LeaderboardPage() {
                                                 className: "w-5 h-5 text-purple-600"
                                             }, void 0, false, {
                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                lineNumber: 185,
+                                                lineNumber: 200,
                                                 columnNumber: 19
                                             }, this),
                                             "인기 상품"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 184,
+                                        lineNumber: 199,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                    lineNumber: 183,
+                                    lineNumber: 198,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1849,7 +1954,7 @@ function LeaderboardPage() {
                                                                 children: product.rank
                                                             }, void 0, false, {
                                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 194,
+                                                                lineNumber: 209,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -1858,7 +1963,7 @@ function LeaderboardPage() {
                                                                 className: "w-12 h-12 rounded-lg object-cover"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 197,
+                                                                lineNumber: 212,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1868,7 +1973,7 @@ function LeaderboardPage() {
                                                                         children: product.name
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                        lineNumber: 203,
+                                                                        lineNumber: 218,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1879,209 +1984,83 @@ function LeaderboardPage() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                        lineNumber: 204,
+                                                                        lineNumber: 219,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 202,
+                                                                lineNumber: 217,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                        lineNumber: 193,
+                                                        lineNumber: 208,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "text-right",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "text-sm text-slate-600 mb-1",
+                                                                children: "판매가"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
+                                                                lineNumber: 223,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "font-bold text-lg text-purple-600",
                                                                 children: formatPrice(product.price)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 208,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "text-sm text-slate-600",
-                                                                children: "판매가"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                                lineNumber: 211,
+                                                                lineNumber: 224,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                        lineNumber: 207,
+                                                        lineNumber: 222,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, product.rank, true, {
                                                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                                lineNumber: 192,
+                                                lineNumber: 207,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 190,
+                                        lineNumber: 205,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                    lineNumber: 189,
+                                    lineNumber: 204,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                            lineNumber: 182,
+                            lineNumber: 197,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                        lineNumber: 181,
+                        lineNumber: 196,
                         columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-1 md:grid-cols-3 gap-6 mt-12",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
-                                className: "text-center p-6",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
-                                            className: "w-6 h-6 text-blue-600"
-                                        }, void 0, false, {
-                                            fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                            lineNumber: 225,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 224,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-bold mb-2",
-                                        children: "1,234"
-                                    }, void 0, false, {
-                                        fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 227,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-slate-600",
-                                        children: "활성 판매자"
-                                    }, void 0, false, {
-                                        fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 228,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                lineNumber: 223,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
-                                className: "text-center p-6",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__["TrendingUp"], {
-                                            className: "w-6 h-6 text-green-600"
-                                        }, void 0, false, {
-                                            fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                            lineNumber: 233,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 232,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-bold mb-2",
-                                        children: "5,678"
-                                    }, void 0, false, {
-                                        fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 235,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-slate-600",
-                                        children: "활성 구매자"
-                                    }, void 0, false, {
-                                        fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 236,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                lineNumber: 231,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
-                                className: "text-center p-6",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__["Trophy"], {
-                                            className: "w-6 h-6 text-purple-600"
-                                        }, void 0, false, {
-                                            fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                            lineNumber: 241,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 240,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-bold mb-2",
-                                        children: "₩2.5B+"
-                                    }, void 0, false, {
-                                        fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 243,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-slate-600",
-                                        children: "총 거래액"
-                                    }, void 0, false, {
-                                        fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                        lineNumber: 244,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                                lineNumber: 239,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                        lineNumber: 222,
-                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-                lineNumber: 48,
+                lineNumber: 63,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/MegaAuction/src/app/leaderboard/page.tsx",
-        lineNumber: 45,
+        lineNumber: 60,
         columnNumber: 5
     }, this);
 }

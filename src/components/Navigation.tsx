@@ -65,7 +65,7 @@ export function Navigation() {
               경매
             </Link>
             <Link href="/leaderboard" className="text-slate-600 hover:text-slate-900 transition-colors">
-              리더보드
+              순위
             </Link>
           </div>
 
@@ -228,7 +228,7 @@ export function Navigation() {
                 className="block text-slate-600 hover:text-slate-900 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                리더보드
+                순위
               </Link>
               <div className="pt-4 border-t space-y-2">
                 {isLoggedIn ? (
