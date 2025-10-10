@@ -38,6 +38,7 @@ export function ProductCard({
 }: ProductCardProps) {
   const [liked, setLiked] = useState(false)
   const [burst, setBurst] = useState(false)
+  const [imageError, setImageError] = useState(false)
 
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -113,26 +114,36 @@ export function ProductCard({
   }
 
   return (
-    <Card className="group overflow-hidden transition-all hover:shadow-lg hover:scale-105 h-full flex flex-col">
+    <Card className="group overflow-hidden h-full flex flex-col w-full max-w-sm p-0">
       <div className="relative aspect-square overflow-hidden">
-        <Image
-          src={imageUrl}
-          alt={name}
-          fill
-          className="object-cover transition-transform group-hover:scale-105"
-        />
+        {!imageError ? (
+          <Image
+            src={imageUrl}
+            alt={name}
+            fill
+            className="object-cover transition-transform group-hover:scale-105"
+            onError={() => setImageError(true)}
+            unoptimized
+            priority={false}
+            loading="lazy"
+          />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
+            <div className="text-center text-slate-500">
+              <div className="w-16 h-16 mx-auto mb-2 bg-slate-300 rounded-lg flex items-center justify-center">
+                <svg className="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <p className="text-sm">이미지 로딩 실패</p>
+            </div>
+          </div>
+        )}
         <div className="absolute top-3 left-3">
           <Badge variant="secondary" className="bg-blue-100 text-blue-800">
             {category}
           </Badge>
         </div>
-        {isAuction && (
-          <div className="absolute top-3 right-3 z-10">
-            <Badge className="bg-orange-100 text-orange-800">
-              경매
-            </Badge>
-          </div>
-        )}
         <div className="absolute bottom-3 right-3 z-10">
           <div className="relative">
             {burst && <span className="absolute -inset-2 rounded-full bg-red-400/40 animate-ping" />}
@@ -151,57 +162,31 @@ export function ProductCard({
         </div>
       </div>
       
-      <CardHeader className="pb-3 flex-shrink-0">
-        <div className="flex items-center gap-2 mb-2">
-          <Avatar className="w-6 h-6">
-            <AvatarImage src={sellerAvatar} />
-            <AvatarFallback>{sellerName.charAt(0)}</AvatarFallback>
-          </Avatar>
-          <span className="text-sm text-muted-foreground">{sellerName}</span>
+      <CardHeader className="pb-2 flex-shrink-0">
+        <div className="text-sm text-gray-500 -mb-1">
+          {sellerName}
         </div>
-        <CardTitle className="text-lg line-clamp-2">{name}</CardTitle>
-      </CardHeader>
-      
-      <CardContent className="pb-3 flex-grow">
-        <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
+        <CardTitle className="text-lg line-clamp-2 -mt-1">{name}</CardTitle>
+        <p className="text-sm text-muted-foreground line-clamp-2">
           {description}
         </p>
-        
-        {isAuction ? (
-          <div className="space-y-3 min-h-[80px]">
+      </CardHeader>
+      
+      <CardContent className="pb-3 flex-grow flex flex-col">
+        <div className="flex-1 flex items-end">
+          <div className="w-full">
             <div className="flex justify-between items-center">
               <span className="text-sm text-muted-foreground">현재 입찰가</span>
-              <span className="font-semibold text-lg text-blue-600">
-                {formatPrice(currentBid ?? 0)}
-              </span>
-            </div>
-            <div className="flex justify-between items-center">
-              <span className="text-sm text-muted-foreground">입찰 수</span>
-              <span className="text-sm font-medium">{bidCount ?? 0}건</span>
-            </div>
-            {auctionEndsAt && (
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Clock className="w-4 h-4" />
-                <span>{formatTimeRemaining(auctionEndsAt)}</span>
+              <div className="relative overflow-hidden">
+                <span className="font-semibold text-lg text-blue-600 transition-all duration-300 ease-in-out">
+                  {formatPrice(isAuction ? (currentBid ?? 0) : price)}
+                </span>
               </div>
-            )}
+            </div>
           </div>
-        ) : (
-          <div className="flex justify-between items-center min-h-[40px]">
-            <span className="text-sm text-muted-foreground">가격</span>
-            <span className="font-semibold text-lg text-slate-900">
-              {formatPrice(price)}
-            </span>
-          </div>
-        )}
+        </div>
       </CardContent>
       
-      <CardFooter className="pt-0 flex-shrink-0">
-        <Button className="w-full" size="sm" onClick={addToCart}>
-          <ShoppingCart className="w-4 h-4 mr-2" />
-          {isAuction ? '입찰하기' : '장바구니에 추가'}
-        </Button>
-      </CardFooter>
     </Card>
   )
 }

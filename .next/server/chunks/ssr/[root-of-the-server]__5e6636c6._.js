@@ -295,7 +295,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$compon
 var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/MegaAuction/src/components/ui/avatar.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/MegaAuction/node_modules/lucide-react/dist/esm/icons/clock.js [app-ssr] (ecmascript) <export default as Clock>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__ = __turbopack_context__.i("[project]/MegaAuction/node_modules/lucide-react/dist/esm/icons/heart.js [app-ssr] (ecmascript) <export default as Heart>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shopping$2d$cart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShoppingCart$3e$__ = __turbopack_context__.i("[project]/MegaAuction/node_modules/lucide-react/dist/esm/icons/shopping-cart.js [app-ssr] (ecmascript) <export default as ShoppingCart>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/MegaAuction/node_modules/next/image.js [app-ssr] (ecmascript)");
 "use client";
 ;
@@ -357,7 +356,7 @@ function ProductCard({ id, name, description, price, imageUrl, category, sellerN
         return `${minutes}분`;
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-        className: "group overflow-hidden transition-all hover:shadow-lg hover:scale-105 h-full flex flex-col",
+        className: "group overflow-hidden h-full flex flex-col scale-[0.9] origin-top w-full max-w-md p-0",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "relative aspect-square overflow-hidden",
@@ -631,32 +630,6 @@ function ProductCard({ id, name, description, price, imageUrl, category, sellerN
             }, void 0, true, {
                 fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
                 lineNumber: 165,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardFooter"], {
-                className: "pt-0 flex-shrink-0",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                    className: "w-full",
-                    size: "sm",
-                    onClick: addToCart,
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shopping$2d$cart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ShoppingCart$3e$__["ShoppingCart"], {
-                            className: "w-4 h-4 mr-2"
-                        }, void 0, false, {
-                            fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                            lineNumber: 201,
-                            columnNumber: 11
-                        }, this),
-                        isAuction ? '입찰하기' : '장바구니에 추가'
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                    lineNumber: 200,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/MegaAuction/src/components/ProductCard.tsx",
-                lineNumber: 199,
                 columnNumber: 7
             }, this)
         ]
@@ -1816,6 +1789,45 @@ const mockProducts = [
         sellerName: '향수마스터',
         sellerAvatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=32&h=32&fit=crop&crop=face',
         isAuction: false
+    },
+    {
+        id: '7',
+        name: '한정판 시계',
+        description: '스위스 제작의 프리미엄 시계입니다.',
+        price: 2500000,
+        imageUrl: 'https://images.unsplash.com/photo-1523170335258-f5b88d7c8c4b?w=400&h=400&fit=crop',
+        category: '시계',
+        sellerName: '럭셔리타임',
+        sellerAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face',
+        isAuction: true,
+        auctionEndsAt: new Date(Date.now() + 18 * 60 * 60 * 1000).toISOString(),
+        currentBid: 3200000,
+        bidCount: 15
+    },
+    {
+        id: '8',
+        name: '수제 목공예',
+        description: '전통 기법으로 제작된 아름다운 목공예품입니다.',
+        price: 150000,
+        imageUrl: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop',
+        category: '공예',
+        sellerName: '목공장인',
+        sellerAvatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=32&h=32&fit=crop&crop=face',
+        isAuction: false
+    },
+    {
+        id: '9',
+        name: '디지털 카메라',
+        description: '프로페셔널 사진작가용 고급 카메라입니다.',
+        price: 1200000,
+        imageUrl: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=400&fit=crop',
+        category: '전자제품',
+        sellerName: '카메라마스터',
+        sellerAvatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=32&h=32&fit=crop&crop=face',
+        isAuction: true,
+        auctionEndsAt: new Date(Date.now() + 8 * 60 * 60 * 1000).toISOString(),
+        currentBid: 1500000,
+        bidCount: 22
     }
 ];
 const categories = [
@@ -1826,6 +1838,8 @@ const categories = [
     '공예',
     '신발',
     '뷰티',
+    '시계',
+    '전자제품',
     '기타'
 ];
 function ProductsPage() {
@@ -1842,7 +1856,7 @@ function ProductsPage() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$Navigation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Navigation"], {}, void 0, false, {
                 fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                lineNumber: 115,
+                lineNumber: 156,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1859,7 +1873,7 @@ function ProductsPage() {
                                         children: "상품 둘러보기"
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                        lineNumber: 122,
+                                        lineNumber: 163,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1867,13 +1881,13 @@ function ProductsPage() {
                                         children: "다양한 크리에이터들의 특별한 상품을 만나보세요"
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                        lineNumber: 123,
+                                        lineNumber: 164,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                lineNumber: 121,
+                                lineNumber: 162,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1887,12 +1901,12 @@ function ProductsPage() {
                                             className: "w-4 h-4"
                                         }, void 0, false, {
                                             fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                            lineNumber: 131,
+                                            lineNumber: 172,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                        lineNumber: 126,
+                                        lineNumber: 167,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1903,38 +1917,38 @@ function ProductsPage() {
                                             className: "w-4 h-4"
                                         }, void 0, false, {
                                             fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                            lineNumber: 138,
+                                            lineNumber: 179,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                        lineNumber: 133,
+                                        lineNumber: 174,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                lineNumber: 125,
+                                lineNumber: 166,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                        lineNumber: 120,
+                        lineNumber: 161,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                    lineNumber: 119,
+                    lineNumber: 160,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                lineNumber: 118,
+                lineNumber: 159,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container mx-auto px-4 py-8",
+                className: "container mx-auto px-6 py-8",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mb-8",
@@ -1948,7 +1962,7 @@ function ProductsPage() {
                                             className: "absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4"
                                         }, void 0, false, {
                                             fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                            lineNumber: 150,
+                                            lineNumber: 191,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1959,13 +1973,13 @@ function ProductsPage() {
                                             className: "pl-10"
                                         }, void 0, false, {
                                             fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                            lineNumber: 151,
+                                            lineNumber: 192,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                    lineNumber: 149,
+                                    lineNumber: 190,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1977,23 +1991,23 @@ function ProductsPage() {
                                             children: category
                                         }, category, false, {
                                             fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                            lineNumber: 161,
+                                            lineNumber: 202,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                    lineNumber: 159,
+                                    lineNumber: 200,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                            lineNumber: 148,
+                            lineNumber: 189,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                        lineNumber: 147,
+                        lineNumber: 188,
                         columnNumber: 9
                     }, this),
                     filteredProducts.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2003,25 +2017,25 @@ function ProductsPage() {
                             children: searchTerm || selectedCategory !== '전체' ? '검색 결과가 없습니다.' : '등록된 상품이 없습니다.'
                         }, void 0, false, {
                             fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                            lineNumber: 177,
+                            lineNumber: 218,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                        lineNumber: 176,
+                        lineNumber: 217,
                         columnNumber: 11
                     }, this) : viewMode === 'grid' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
+                        className: "grid gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 justify-items-start",
                         children: filteredProducts.map((product)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$src$2f$components$2f$ProductCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ProductCard"], {
                                 ...product
                             }, product.id, false, {
                                 fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                lineNumber: 188,
+                                lineNumber: 229,
                                 columnNumber: 17
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                        lineNumber: 186,
+                        lineNumber: 227,
                         columnNumber: 13
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "space-y-4",
@@ -2036,7 +2050,7 @@ function ProductsPage() {
                                                 children: p.category
                                             }, void 0, false, {
                                                 fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                                lineNumber: 196,
+                                                lineNumber: 237,
                                                 columnNumber: 21
                                             }, this),
                                             p.isAuction ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2044,13 +2058,13 @@ function ProductsPage() {
                                                 children: "경매"
                                             }, void 0, false, {
                                                 fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                                lineNumber: 197,
+                                                lineNumber: 238,
                                                 columnNumber: 36
                                             }, this) : null
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                        lineNumber: 195,
+                                        lineNumber: 236,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2064,7 +2078,7 @@ function ProductsPage() {
                                                         children: p.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                                        lineNumber: 201,
+                                                        lineNumber: 242,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2072,7 +2086,7 @@ function ProductsPage() {
                                                         children: p.description
                                                     }, void 0, false, {
                                                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                                        lineNumber: 202,
+                                                        lineNumber: 243,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2084,26 +2098,26 @@ function ProductsPage() {
                                                                 className: "w-6 h-6 rounded-full object-cover"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                                                lineNumber: 204,
+                                                                lineNumber: 245,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 children: p.sellerName
                                                             }, void 0, false, {
                                                                 fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                                                lineNumber: 205,
+                                                                lineNumber: 246,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                                        lineNumber: 203,
+                                                        lineNumber: 244,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                                lineNumber: 200,
+                                                lineNumber: 241,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2119,7 +2133,7 @@ function ProductsPage() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                                            lineNumber: 211,
+                                                            lineNumber: 252,
                                                             columnNumber: 27
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2131,7 +2145,7 @@ function ProductsPage() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                                            lineNumber: 212,
+                                                            lineNumber: 253,
                                                             columnNumber: 27
                                                         }, this)
                                                     ]
@@ -2143,29 +2157,29 @@ function ProductsPage() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                                    lineNumber: 215,
+                                                    lineNumber: 256,
                                                     columnNumber: 25
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                                lineNumber: 208,
+                                                lineNumber: 249,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                        lineNumber: 199,
+                                        lineNumber: 240,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, p.id, true, {
                                 fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                                lineNumber: 194,
+                                lineNumber: 235,
                                 columnNumber: 17
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                        lineNumber: 192,
+                        lineNumber: 233,
                         columnNumber: 13
                     }, this),
                     filteredProducts.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$MegaAuction$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2176,24 +2190,24 @@ function ProductsPage() {
                             children: "더 많은 상품 보기"
                         }, void 0, false, {
                             fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                            lineNumber: 228,
+                            lineNumber: 269,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                        lineNumber: 227,
+                        lineNumber: 268,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-                lineNumber: 145,
+                lineNumber: 186,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/MegaAuction/src/app/products/page.tsx",
-        lineNumber: 114,
+        lineNumber: 155,
         columnNumber: 5
     }, this);
 }
